@@ -2,6 +2,8 @@ import os, requests
 
 
 def token(request):
+
+    # auth did not go thorugh
     if not "Authorization" in request.headers:
         return None, ("missing credentials", 401)
 
